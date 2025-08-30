@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <h1>💰 Caixinha Financeira</h1>
+
+  <div class="form">
+    <input type="text" id="descricao" placeholder="Descrição">
+    <input type="text" id="valor" placeholder="Valor (ex: 120,50)">
+    <select id="tipo">
+      <option value="entrada">Entrada</option>
+      <option value="saida">Saída</option>
+    </select>
+    <button id="btn-adicionar">Adicionar</button>
+  </div>
+
+  <h2>Saldo: <span id="saldo">R$ 0,00</span></h2>
+
+  <h3>📋 Lançamentos</h3>
+  <div class="filtros">
+    <button id="btn-todos">Todos</button>
+    <button id="btn-entradas">Entradas</button>
+    <button id="btn-saidas">Saídas</button>
+  </div>
+
+  <ul id="lista"></ul>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
